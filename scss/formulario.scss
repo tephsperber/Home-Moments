@@ -1,0 +1,32 @@
+
+/*Formulario */
+
+.form {
+	padding: 30px;
+	font-size: 15px;
+	text-align: center;
+}
+
+#imgForm {
+	width: 400px;
+}
+
+.enviar {
+	width: 130px;
+	border-radius: 1em;
+	background-color: #d1b19c;
+	border: 1px solid #e7e7e2;
+	color: black;
+	padding: 2px;
+	margin: 10px;
+}
+
+.enviar:hover {
+	font-weight: bold;
+}
+
+.limpiar {
+	@extend .enviar;
+	background-color: #e7e7e2;
+	border: 1px solid #d1b19c;
+}

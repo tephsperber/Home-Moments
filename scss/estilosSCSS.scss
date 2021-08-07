@@ -1,0 +1,893 @@
+/*Importar SCSS*/
+@import "generales";
+@import "topbanner";
+@import "header";
+@import "contacto";
+@import "formulario";
+@import "footer";
+
+
+
+/*Título de cada página*/
+
+h2 {
+	text-transform: uppercase;
+	font-size: 35px;
+	text-align: center;
+	letter-spacing: 5px;
+	width: 100%;
+	justify-content: center;
+	color: black;
+	animation-name: titulo;
+	animation-duration: 2s;
+	padding: 20px;
+	display: block;
+	text-transform: uppercase;
+	font-family: "Open Sans Condensed", sans-serif;
+	padding-top: 30px;
+}
+
+@keyframes titulo {
+	from {
+		width: 300%;
+		margin-bottom: 100%;
+	}
+
+	to {
+		width: 100%;
+		margin-bottom: 0%;
+	}
+}
+
+/*Multimedia*/
+
+.iframe {
+	text-align: center;
+
+	margin-bottom: 40px;
+	width: 100%;
+}
+
+.imgNosotras__foto {
+	width: 200px;
+	margin-top: 30px;
+}
+.backgroundNosotras {
+	border-radius: 20px;
+	background-color: #f8f9fa;
+}
+
+.fotoProductos {
+	width: 300px;
+	height: 300px;
+	border-radius: 10px;
+}
+
+.carrusel {
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+
+.tituloVideo {
+	@extend h5;
+	margin-bottom: 50px;
+}
+
+.imgclick {
+	width: 25px;
+	height: 25px;
+}
+
+.fotoshogar {
+	height: 200px;
+	width: 200px;
+	padding: 20px;
+}
+video {
+	width: 100%;
+	height: 450px;
+	margin: 10px;
+}
+
+.fotoshogar {
+	width: 500px;
+	height: 200px;
+	padding: 10px;
+	max-width: 100%;
+}
+
+/*Grids*/
+
+#grid {
+	display: grid;
+	grid-template-areas:
+		"productos1 productos2"
+		"productos3 productos4";
+	grid-template-columns: repeat(2, 1/2fr);
+	grid-template-rows: 1/2fr, 1/2fr;
+	grid-gap: 40px;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.productos1 {
+	grid-area: productos1;
+}
+.productos1:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.productos2 {
+	grid-area: productos2;
+}
+.productos2:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.productos3 {
+	grid-area: productos3;
+}
+.productos3:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.productos4 {
+	grid-area: productos4;
+}
+
+.productos4:hover {
+	transform: scale(1.2, 1.2);
+}
+
+#grid2 {
+	display: grid;
+	grid-template-areas: "combo1 combo2 combo3 combo4";
+	grid-template-columns: repeat(2, 1/2fr);
+	grid-template-rows: 1/2fr, 1/2fr;
+	grid-gap: 40px;
+	margin: 50px;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 10px;
+}
+
+.combos {
+	width: 100%;
+}
+
+.combo1 {
+	grid-area: combo1;
+}
+.combo2 {
+	grid-area: combo2;
+}
+.combo3 {
+	grid-area: combo3;
+}
+.combo4 {
+	grid-area: combo4;
+}
+
+#grid3 {
+	display: grid;
+	grid-template-areas: "nosotras1 nosotras2 nosotras3";
+	grid-template-columns: repeat(2, 2, 2fr);
+	margin: 20px;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 450px;
+}
+
+.nosotras1 {
+	grid-area: nosotras1;
+}
+
+.nosotras2 {
+	grid-area: nosotras2;
+}
+
+.nosotras3 {
+	grid-area: nosotras3;
+}
+
+#grid4 {
+	display: grid;
+	grid-template-areas: "comoComprar2 comoComprar1";
+	grid-template-columns: repeat(2, 2, 2fr);
+	margin: 40px;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.comoComprar1 {
+	grid-area: comoComprar1;
+}
+
+.comoComprar2 {
+	grid-area: comoComprar2;
+}
+
+.imgComoComprar__foto {
+	width: 700px;
+	border-radius: 10px;
+}
+
+.lista {
+	font-size: 20px;
+	font-weight: none;
+	padding: 10px;
+	letter-spacing: 1px;
+}
+
+#grid5 {
+	display: grid;
+	grid-template-areas: "contacto1 contacto2 contacto3 contacto4";
+	grid-template-columns: repeat (1, 1, 1, 1fr);
+	justify-items: center;
+	align-items: center;
+	justify-content: space-around;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.contacto1 {
+	grid-area: contacto1;
+	height: 100px;
+}
+
+.contacto2 {
+	grid-area: contacto2;
+	height: 100px;
+}
+
+.contacto3 {
+	grid-area: contacto3;
+	height: 100px;
+}
+
+.contacto4 {
+	grid-area: contacto4;
+	height: 100px;
+}
+
+#grid6 {
+	display: grid;
+	grid-template-areas: "imagen formulario";
+	grid-template-columns: repeat(2, 2fr);
+	justify-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.imagen {
+	grid-area: imagen;
+}
+
+.formulario {
+	grid-area: formulario;
+}
+
+/*Tabla*/
+
+tr {
+	width: 300px;
+	height: 40px;
+	font-size: 20px;
+	letter-spacing: 4px;
+}
+
+td {
+	font-size: 15px;
+}
+
+th {
+	border-right: 2px solid black;
+}
+
+td,
+th {
+	width: 250px;
+}
+
+table {
+	border: 2px solid black;
+}
+.sinborde {
+	border: none;
+}
+
+.tabla {
+	margin: 50px;
+}
+
+
+/*Otros*/
+
+.comprarOnline {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.texto {
+	font-size: 15px;
+	padding: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: black;
+}
+
+.texto:hover {
+	color: #d1b19c;
+}
+
+#ver {
+	background-color: #d1b19c;
+	border: none;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	width: auto;
+	font-weight: bold;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	margin-bottom: 20px;
+}
+
+a#ver:hover {
+	background-color: white;
+	transition: background-color 0s;
+	color: #d1b19c;
+}
+
+h5 {
+	font-size: 25px;
+	font-family: "Open Sans Condensed", sans-serif;
+	text-align: center;
+}
+
+.card3 {
+	border: none;
+	height: 400px;
+}
+
+.card2 {
+	border: none;
+}
+
+
+
+/*Responsive */
+
+
+@media screen and (min-width: 480px) and (max-width: 980px) {
+	.header__titulo {
+		font-size: 1em;
+	}
+	.header__logo {
+		max-width: 40px;
+		max-height: 40px;
+		margin: 10px;
+	}
+	h2 {
+		font-size: 20px;
+		padding: 20px;
+	}
+	footer {
+		font-size: 10px;
+	}
+	#ver {
+		font-size: 10px;
+	}
+
+	.columna {
+		width: 100%;
+		display: flex;
+		height: 70px;
+	}
+
+	.datos__texto--titulo {
+		font-size: 0em;
+	}
+
+	.footer {
+		font-size: 7px;
+	}
+	.fotoProductos {
+		width: 200px;
+		height: 200px;
+		border-radius: 10px;
+	}
+
+	#grid {
+		display: grid;
+		grid-template-areas:
+			"productos1"
+			"productos2"
+			"productos3"
+			"productos4";
+		grid-template-columns: repeat(2, 1/2fr);
+		grid-template-rows: 1/2fr, 1/2fr;
+		grid-gap: 40px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+
+	.productos1 {
+		grid-area: productos1;
+	}
+	.productos1:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos2 {
+		grid-area: productos2;
+	}
+	.productos2:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos3 {
+		grid-area: productos3;
+	}
+	.productos3:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos4 {
+		grid-area: productos4;
+	}
+
+	.productos4:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	.tituloVideo {
+		font-size: 20px;
+	}
+
+	#grid2 {
+		display: grid;
+		grid-template-areas:
+			"combo1 combo2"
+			"combo3 combo4";
+		grid-template-columns: repeat(2, 1/2fr);
+		grid-template-rows: 1/2fr, 1/2fr;
+		grid-gap: 40px;
+		margin: 50px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+
+	.combo1 {
+		grid-area: combo1;
+	}
+	.combo2 {
+		grid-area: combo2;
+	}
+	.combo3 {
+		grid-area: combo3;
+	}
+	.combo4 {
+		grid-area: combo4;
+	}
+
+	tr {
+		height: 10px;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+
+	td {
+		font-size: 10px;
+	}
+
+	#grid3 {
+		display: grid;
+		grid-template-areas:
+			"nosotras1"
+			"nosotras2"
+			"nosotras3";
+		grid-template-columns: repeat(2, 2, 2fr);
+		margin: 20px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 1500px;
+	}
+
+	.nosotras1 {
+		grid-area: nosotras1;
+	}
+
+	.nosotras2 {
+		grid-area: nosotras2;
+	}
+
+	.nosotras3 {
+		grid-area: nosotras3;
+	}
+
+	#grid4 {
+		display: grid;
+		grid-template-areas:
+			"comoComprar2"
+			"comoComprar1";
+		grid-template-columns: repeat(2, 2, 2fr);
+		margin: 40px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.comoComprar1 {
+		grid-area: comoComprar1;
+	}
+
+	.comoComprar2 {
+		grid-area: comoComprar2;
+	}
+
+	.imgComoComprar__foto {
+		width: 300px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	.comprarOnline {
+		font-size: 15px;
+	}
+	.lista {
+		font-size: 15px;
+	}
+
+	#grid5 {
+		display: none;
+	}
+
+	#grid6 {
+		display: grid;
+		grid-template-areas:
+			"imagen"
+			"formulario";
+		grid-template-columns: repeat(2, 2fr);
+		margin-left: 90px;
+	}
+
+	.imagen {
+		grid-area: imagen;
+	}
+
+	.formulario {
+		grid-area: formulario;
+	}
+	#imgForm {
+		width: 100px;
+	}
+
+	header {
+		position: sticky;
+		top: 0px;
+		width: 100%;
+		z-index: 1001;
+		background-color: #e7e7e2;
+	}
+
+	.header__logo {
+		width: 35px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	.header__titulo span {
+		font-size: 20px;
+		font-family: "Dancing Script", cursive;
+		font-weight: 600;
+		color: black;
+	}
+
+	.header__titulo {
+		font-size: 15px;
+		color: black;
+		font-family: "Open Sans Condensed", sans-serif;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		width: 200px;
+	}
+
+	.nav {
+		font-size: 15px;
+		color: black;
+		font-family: "Open Sans Condensed", sans-serif;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		width: 100%;
+		background-color: #f8f1e9;
+		height: 80px;
+		display: inline;
+	}
+
+	.topbanner {
+		display: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header__titulo {
+		font-size: 1em;
+	}
+	.header__logo {
+		max-width: 40px;
+		max-height: 40px;
+		margin: 10px;
+	}
+	h2 {
+		font-size: 20px;
+		padding: 20px;
+	}
+	footer {
+		font-size: 10px;
+	}
+	#ver {
+		font-size: 10px;
+	}
+
+	.columna {
+		width: 100%;
+		display: flex;
+		height: 70px;
+	}
+
+	.datos__texto--titulo {
+		font-size: 0em;
+	}
+
+	.footer {
+		font-size: 7px;
+	}
+	.fotoProductos {
+		width: 200px;
+		height: 200px;
+		border-radius: 10px;
+	}
+
+	#grid {
+		display: grid;
+		grid-template-areas:
+			"productos1"
+			"productos2"
+			"productos3"
+			"productos4";
+		grid-template-columns: repeat(2, 1/2fr);
+		grid-template-rows: 1/2fr, 1/2fr;
+		grid-gap: 40px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+
+	.productos1 {
+		grid-area: productos1;
+	}
+	.productos1:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos2 {
+		grid-area: productos2;
+	}
+	.productos2:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos3 {
+		grid-area: productos3;
+	}
+	.productos3:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	.productos4 {
+		grid-area: productos4;
+	}
+
+	.productos4:hover {
+		transform: scale(1.2, 1.2);
+	}
+
+	h5 {
+		font-size: 20px;
+	}
+
+	.tituloVideo {
+		font-size: 20px;
+	}
+
+	#grid2 {
+		display: grid;
+		grid-template-areas:
+			"combo1 combo2"
+			"combo3 combo4";
+		grid-template-columns: repeat(2, 1/2fr);
+		grid-template-rows: 1/2fr, 1/2fr;
+		grid-gap: 40px;
+		margin: 50px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 10px;
+	}
+
+	.combo1 {
+		grid-area: combo1;
+	}
+	.combo2 {
+		grid-area: combo2;
+	}
+	.combo3 {
+		grid-area: combo3;
+	}
+	.combo4 {
+		grid-area: combo4;
+	}
+
+	tr {
+		height: 10px;
+		font-size: 10px;
+		letter-spacing: 1px;
+	}
+
+	td {
+		font-size: 10px;
+	}
+
+	#grid3 {
+		display: grid;
+		grid-template-areas:
+			"nosotras1"
+			"nosotras2"
+			"nosotras3";
+		grid-template-columns: repeat(2, 2, 2fr);
+		margin: 20px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+		height: 1500px;
+	}
+
+	.nosotras1 {
+		grid-area: nosotras1;
+	}
+
+	.nosotras2 {
+		grid-area: nosotras2;
+	}
+
+	.nosotras3 {
+		grid-area: nosotras3;
+	}
+
+	#grid4 {
+		display: grid;
+		grid-template-areas:
+			"comoComprar2"
+			"comoComprar1";
+		grid-template-columns: repeat(2, 2, 2fr);
+		margin: 40px;
+		justify-items: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.comoComprar1 {
+		grid-area: comoComprar1;
+	}
+
+	.comoComprar2 {
+		grid-area: comoComprar2;
+	}
+
+	.imgComoComprar__foto {
+		width: 300px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	.comprarOnline {
+		font-size: 15px;
+	}
+	.lista {
+		font-size: 15px;
+	}
+
+	#grid5 {
+		display: none;
+	}
+
+	#grid6 {
+		display: grid;
+		grid-template-areas:
+			"imagen"
+			"formulario";
+		grid-template-columns: repeat(2, 2fr);
+		margin-left: 90px;
+	}
+
+	.imagen {
+		grid-area: imagen;
+	}
+
+	.formulario {
+		grid-area: formulario;
+	}
+	#imgForm {
+		width: 100px;
+	}
+
+	header {
+		position: sticky;
+		top: 0px;
+		width: 100%;
+		z-index: 1001;
+		background-color: #e7e7e2;
+	}
+
+	.header__logo {
+		width: 35px;
+		height: 30px;
+		margin-right: 10px;
+	}
+
+	.header__titulo span {
+		font-size: 20px;
+		font-family: "Dancing Script", cursive;
+		font-weight: 600;
+		color: black;
+	}
+
+	.header__titulo {
+		font-size: 15px;
+		color: black;
+		font-family: "Open Sans Condensed", sans-serif;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		width: 200px;
+	}
+
+	.nav {
+		font-size: 15px;
+		color: black;
+		font-family: "Open Sans Condensed", sans-serif;
+		font-weight: 300;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		width: 100%;
+		background-color: #f8f1e9;
+		height: 80px;
+		display: inline;
+	}
+
+	.topbanner {
+		display: none;
+	}
+}
